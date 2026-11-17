@@ -1,0 +1,60 @@
+.loading-page,
+.error-page {
+  width: min(760px, calc(100% - 36px));
+  margin: 100px auto;
+  text-align: center;
+}
+
+.loading-page h1,
+.error-page h1 {
+  margin: 15px 0;
+  font-size: clamp(28px, 4vw, 42px);
+  letter-spacing: -1px;
+}
+
+.loading-page p,
+.error-page p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #9398a2;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.loading-indicator {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 25px;
+  border: 3px solid #30343d;
+  border-top-color: #e8e9ed;
+  border-radius: 50%;
+  animation: research-spin 0.9s linear infinite;
+}
+
+.loading-steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.loading-steps span {
+  padding: 10px 14px;
+  border: 1px solid #292e36;
+  border-radius: 8px;
+  background: #111318;
+  color: #aeb3bd;
+  font-size: 11px;
+}
+
+.error-page .research-button {
+  max-width: 240px;
+  margin: 25px auto 0;
+}
+
+@keyframes research-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
